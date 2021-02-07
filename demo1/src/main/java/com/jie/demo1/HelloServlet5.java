@@ -31,7 +31,6 @@ public class HelloServlet5 extends HttpServlet {
         System.out.println("获取HTTP版本号: " + protocol);
         String contextPath = req.getContextPath();
         System.out.println("获取webapp项目站点名字（项目对外访问路径，上下文路径）: " + contextPath);
-
         String uname = req.getParameter("uname");
         System.out.println("uname: "+uname);
         String[] hobbies = req.getParameterValues("hobby");
